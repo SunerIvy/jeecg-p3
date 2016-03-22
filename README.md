@@ -1,6 +1,6 @@
 Jeecg-P3插件开发框架
 ==========
-特点：业务组件以JAR方式提供，松耦合、插件模式、可插拔、支持可独立部署，也可以集成Jeecg平台中。
+特点：业务组件以JAR方式提供，插件模式、松耦合、可插拔、支持独立部署，也可以无缝集成Jeecg平台中。
 
 	  
 【架构说明】
@@ -36,13 +36,13 @@ Jeecg-P3插件开发框架
 
 
 	搭建步骤：
-	第一步：创建Mysql数据库jeecg-p3(UTF-8编码)，执行数据库脚本
+	第一步：创建Mysql数据库jeecg-p3，采用UTF-8编码，执行下面数据库脚本
             jeecg-p3-web/doc/sql/jeecg-p3-mysql.sql
 	第二步：采用maven方式启动项目 (jeecg-p3-web)
             项目右建->debug as->debug configurations->选中jeecg-p3-web项目->输入命令：tomcat:run
             注意：[1].update snapshots需要选中，官方会不断更新底层包
-			      [2].插件项目不能单独启动，需以maven方式引入到jeecg-p3-web项目
-	第三步：访问测试地址
+			      [2].插件项目不能单独启动，需以maven方式引入jeecg-p3-web项目中，启动web主项目
+	第三步：测试访问地址
 		    1. http://localhost/jeecg-p3-web/p3/wxActInvite.do?list
 		    2. http://localhost/jeecg-p3-web/p3/auth.do?list
 
@@ -54,4 +54,4 @@ Jeecg-P3插件开发框架
 技术交流
 ==========
 * 论坛：[www.jeecg.org](http://www.jeecg.org)
-* Jeecg开发群②: 106838471	
+* Jeecg开发群②: 106838471
