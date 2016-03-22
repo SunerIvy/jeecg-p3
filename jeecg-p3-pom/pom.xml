@@ -10,12 +10,24 @@
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
 
-	<distributionManagement>  
-		  <repository>
-		    <id>jeecg</id>  
-		    <url>http://maven.jeecg.com:8090/nexus/content/repositories/jeecg</url>
-		  </repository>
-	</distributionManagement>
+	<repositories>
+		<repository>
+			<id>jeecg</id>
+			<name>jeecg Repository</name>
+			<url>http://maven.jeecg.org/nexus/content/repositories/jeecg</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>jeecg-snapshots</id>
+			<name>jeecg-snapshots Repository</name>
+			<url>http://maven.jeecg.org/nexus/content/repositories/snapshots</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 	
 	<properties>
 		<org.springframework.version>4.0.9.RELEASE</org.springframework.version>
