@@ -1,5 +1,5 @@
 开发环境入门步骤：
- 第一步：创建数据库jeecg-p3(UTF-8编码)，执行数据库脚本
+ 第一步：创建Mysql数据库jeecg-p3(UTF-8编码)，执行数据库脚本
   jeecg-p3-web/doc/sql/jeecg-p3-mysql.sql
  第二步：采用maven方式启动项目 (jeecg-p3-web)
         项目右建->debug as->debug configurations->选中jeecg-p3-web项目->输入命令：tomcat:run

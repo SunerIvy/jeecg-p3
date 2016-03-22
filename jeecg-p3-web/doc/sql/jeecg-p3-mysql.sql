@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS `wx_act_invite`;
 CREATE TABLE `wx_act_invite` (
   `id` varchar(32) NOT NULL COMMENT 'ID',
   `name` varchar(100) NOT NULL COMMENT '活动名称',
-  `begain_time` datetime DEFAULT NULL COMMENT '活动开始时间',
+  `begin_time` datetime DEFAULT NULL COMMENT '活动开始时间',
   `end_time` datetime DEFAULT NULL COMMENT ' 活动结束时间',
   `hdurl` varchar(300) DEFAULT NULL COMMENT '入口地址',
   PRIMARY KEY (`id`)

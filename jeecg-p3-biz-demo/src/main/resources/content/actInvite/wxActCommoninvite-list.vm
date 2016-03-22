@@ -35,7 +35,7 @@
 								                #foreach($!{info} in $!{pageInfos})
 									            	<tr>			
 																	<td>$!{info.name}</td>
-																	<td>$!dateTool.format("yyyy-MM-dd HH:mm:ss",$!{info.begainTime})</td>
+																	<td>$!dateTool.format("yyyy-MM-dd HH:mm:ss",$!{info.beginTime})</td>
 																	<td>$!dateTool.format("yyyy-MM-dd HH:mm:ss",$!{info.endTime})</td>
 										                <td class="last">
 							                			<a href="javascript:doUrl('$!{basePath}/p3/wxActInvite.do?toEdit&id=$!{info.id}')" >编辑</a>

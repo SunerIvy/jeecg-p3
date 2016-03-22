@@ -6,8 +6,8 @@ SET
 	<#if act.name ?exists && act.name ?length gt 0>
 	    ,name = :act.name
 	</#if>
-	<#if act.begainTime ?exists>
-	    ,begain_time = :act.begainTime
+	<#if act.beginTime ?exists>
+	    ,begin_time = :act.beginTime
 	</#if>
 	<#if act.endTime ?exists>
 	    ,end_time = :act.endTime

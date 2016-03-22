@@ -14,7 +14,7 @@ import java.math.BigDecimal;
  */
 public class WxActInvite implements Serializable {
 	private static final long serialVersionUID = 1L;
-		/**	 *ID	 */	private String id;	/**	 *活动名称	 */	private String name;	/**	 *活动开始时间	 */	private Date begainTime;	/**	 * 活动结束时间	 */	private Date endTime;	/**	 *入口地址	 */	private String hdurl;
+		/**	 *ID	 */	private String id;	/**	 *活动名称	 */	private String name;	/**	 *活动开始时间	 */	private Date beginTime;	/**	 * 活动结束时间	 */	private Date endTime;	/**	 *入口地址	 */	private String hdurl;
 	public String getId() {
 		return id;
 	}
@@ -27,11 +27,11 @@ public class WxActInvite implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Date getBegainTime() {
-		return begainTime;
+	public Date getBeginTime() {
+		return beginTime;
 	}
-	public void setBegainTime(Date begainTime) {
-		this.begainTime = begainTime;
+	public void setBeginTime(Date beginTime) {
+		this.beginTime = beginTime;
 	}
 	public Date getEndTime() {
 		return endTime;
