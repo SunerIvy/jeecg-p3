@@ -38,13 +38,19 @@ Jeecg-P3插件开发框架
 	搭建步骤：
 	第一步：创建Mysql数据库jeecg-p3，采用UTF-8编码，执行下面数据库脚本
             jeecg-p3-web/doc/sql/jeecg-p3-mysql.sql
-	第二步：采用maven方式启动项目 (jeecg-p3-web)
+	第二步：按照顺序依次install  {jeecg-p3-pom}  {jeecg-p3-biz-demo}                           
+			提醒：很重要，如果不install，会报依赖包仓库找不到的错误。
+	第三步：采用maven方式启动项目 (jeecg-p3-web)
             项目右建->debug as->debug configurations->选中jeecg-p3-web项目->输入命令：tomcat:run
             注意：[1].update snapshots需要选中，官方会不断更新底层包
 			      [2].插件项目不能单独启动，需以maven方式引入jeecg-p3-web项目中，启动web主项目
-	第三步：测试访问地址
+	第四步：测试访问地址
 		    1. http://localhost/jeecg-p3-web/p3/wxActInvite.do?list
 		    2. http://localhost/jeecg-p3-web/p3/auth.do?list
+
+	快捷启动：
+			步骤：直接双击运行jeecg-p3-web\bin\run-tomcat7.bat或bin\run-tomcat.bat，
+			      启动Web服务器（第一次运行，需要下载依赖jar包，请耐心等待）。
 
 【代码生成器】
 
