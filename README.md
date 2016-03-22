@@ -34,8 +34,7 @@ Jeecg-P3插件开发框架
 	1.标准开发工具：eclipse + jdk7 + tomcat7 + mysql
     2.项目为maven工程，采用maven方式导入eclipse等IDE开发工具 
 
-	  
-	  
+
 	搭建步骤：
 	第一步：创建Mysql数据库jeecg-p3(UTF-8编码)，执行数据库脚本
             jeecg-p3-web/doc/sql/jeecg-p3-mysql.sql
