@@ -5,7 +5,7 @@
 <body style='overflow:scroll;overflow-x:hidden'>
 	<div class="container bs-docs-container" style="width:100%;">
 		<div class="row">
-			<form role="form" class="form-inline" action="$!{basePath}/${bussPackage}/${lowerName}.do?list" method="post"  id="formSubmit">
+			<form role="form" class="form-inline" action="$!{basePath}/${projectName}/${lowerName}.do?list" method="post"  id="formSubmit">
 				<div  class="col-md-10" style="width:100%">
 								<div class="panel panel-default">
 								  <div class="panel-heading">活动配置列表</div>
@@ -36,7 +36,7 @@
 											  <div class="clearfix"></div>
 								  		</div>
 								  		<div id="legend">
-								          <legend  class="le"><button type="button" class="btn btn-primary" onclick="doUrl('$!{basePath}/${bussPackage}/${lowerName}.do?toAdd')" >新增</button></legend> 
+								          <legend  class="le"><button type="button" class="btn btn-primary" onclick="doUrl('$!{basePath}/${projectName}/${lowerName}.do?toAdd')" >新增</button></legend> 
 								        </div>
 								        <table class="table table-striped">
 									        <thead>
@@ -65,9 +65,9 @@
 															</#if>
 														</#list> 
 										                <td class="last">
-							                			<a href="javascript:doUrl('$!{basePath}/${bussPackage}/${lowerName}.do?toEdit&id=$!{info.id}')" >编辑</a>
-							                			<a href="javascript:delData('$!{basePath}/${bussPackage}/${lowerName}.do?doDelete&id=$!{info.id}')">删除</a>
-							                			<a href="javascript:doUrl('$!{basePath}/${bussPackage}/${lowerName}.do?toDetail&id=$!{info.id}')">详情</a>
+							                			<a href="javascript:doUrl('$!{basePath}/${projectName}/${lowerName}.do?toEdit&id=$!{info.id}')" >编辑</a>
+							                			<a href="javascript:delData('$!{basePath}/${projectName}/${lowerName}.do?doDelete&id=$!{info.id}')">删除</a>
+							                			<a href="javascript:doUrl('$!{basePath}/${projectName}/${lowerName}.do?toDetail&id=$!{info.id}')">详情</a>
 						                				</td>
 									           		</tr>
 									             #end

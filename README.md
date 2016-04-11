@@ -24,8 +24,9 @@ Jeecg-P3插件开发框架
 
 【项目说明】
 
-	jeecg-p3-web      | 启动主项目
-	jeecg-p3-biz-demo | 插件项目Demo     
+	jeecg-p3-web               | 启动主项目
+	jeecg-p3-biz-demo          | 插件项目Demo
+    jeecg-p3-project-generator | 生成新插件工具	
 
 【开发入门】
 
@@ -57,7 +58,12 @@ Jeecg-P3插件开发框架
 
 	1.工具类：jeecg-p3-web/src/main/java/util/P3CodeGenerateUtil.java
 	2.配置文件：jeecg-p3-web/src/main/resources/p3-cg-config.properties
+	
+【插件生成器】
 
+	1.工具类：jeecg-p3-project-generator/src/main/java/GeneratorMain.java
+	2.配置文件：jeecg-p3-project-generator/src/main/resources/project-generator.properties
+	
 技术交流
 ==========
 * 论坛：[www.jeecg.org](http://www.jeecg.org)

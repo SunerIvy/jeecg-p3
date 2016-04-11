@@ -26,7 +26,7 @@ import ${daoPackage}.${className}Dao;
  * @version:1.0
  */
 @Controller
-@RequestMapping("/${bussPackage}/${lowerName}")
+@RequestMapping("/${projectName}/${lowerName}")
 public class ${className}Controller extends BaseController{
   @Autowired
   private ${className}Dao ${lowerName}Dao;
@@ -46,7 +46,7 @@ public class ${className}Controller extends BaseController{
 				VelocityContext velocityContext = new VelocityContext();
 				velocityContext.put("${lowerName}",query);
 				velocityContext.put("pageInfos",SystemTools.convertPaginatedList(list));
-				String viewName = "${bussPackage}/${lowerName}-list.vm";
+				String viewName = "${projectName}/${bussPackage}/${lowerName}-list.vm";
 				ViewVelocity.view(request,response,viewName,velocityContext);
 			} catch (Exception e) {
 			e.printStackTrace();
@@ -60,7 +60,7 @@ public class ${className}Controller extends BaseController{
 	@RequestMapping(params="toDetail",method = RequestMethod.GET)
 	public void ${lowerName}Detail(@RequestParam(required = true, value = "id" ) String id,HttpServletResponse response,HttpServletRequest request)throws Exception{
 			VelocityContext velocityContext = new VelocityContext();
-			String viewName = "${bussPackage}/${lowerName}-detail.vm";
+			String viewName = "${projectName}/${bussPackage}/${lowerName}-detail.vm";
 			${className} ${lowerName} = ${lowerName}Dao.get(id);
 			velocityContext.put("${lowerName}",${lowerName});
 			ViewVelocity.view(request,response,viewName,velocityContext);
@@ -73,7 +73,7 @@ public class ${className}Controller extends BaseController{
 	@RequestMapping(params = "toAdd",method ={RequestMethod.GET, RequestMethod.POST})
 	public void toAddDialog(HttpServletRequest request,HttpServletResponse response)throws Exception{
 		 VelocityContext velocityContext = new VelocityContext();
-		 String viewName = "${bussPackage}/${lowerName}-add.vm";
+		 String viewName = "${projectName}/${bussPackage}/${lowerName}-add.vm";
 		 ViewVelocity.view(request,response,viewName,velocityContext);
 	}
 
@@ -107,7 +107,7 @@ public class ${className}Controller extends BaseController{
 			 VelocityContext velocityContext = new VelocityContext();
 			 ${className} ${lowerName} = ${lowerName}Dao.get(id);
 			 velocityContext.put("${lowerName}",${lowerName});
-			 String viewName = "${bussPackage}/${lowerName}-edit.vm";
+			 String viewName = "${projectName}/${bussPackage}/${lowerName}-edit.vm";
 			 ViewVelocity.view(request,response,viewName,velocityContext);
 	}
 

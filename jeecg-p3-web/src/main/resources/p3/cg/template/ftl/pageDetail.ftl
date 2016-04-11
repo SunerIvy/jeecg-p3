@@ -14,14 +14,14 @@
 											<#if item.columnName != 'del_stat' && item.columnName != 'creator' && item.columnName != 'editor' && item.columnName != 'create_dt' && item.columnName != 'edit_dt' && item.columnName != 'last_edit_dt' && item.columnName != 'record_version'>
 												<#if item.columnType == "datetime" ||item.columnType == "date" || item.columnType == "timestamp">
 													  <div class="form-group mno">
-													    <label for="inputEmail3" class="col-sm-1 control-label" style="text-align:left;">${item.columnComment}</label>
+													    <label for="inputEmail3" class="col-sm-2 control-label" style="text-align:left;">${item.columnComment}</label>
 													    <div class="col-sm-2">
 													      <input type="text" value="$!dateTool.format("yyyy-MM-dd",$!{${lowerName}.${item.domainPropertyName}})" name="${item.domainPropertyName}" id="${item.domainPropertyName}" class="form-control" />
 													    </div>
 													  </div>
 												<#else>
 													 <div class="form-group mno">
-													    <label for="inputEmail3" class="col-sm-1 control-label" style="text-align:left;">${item.columnComment}</label>
+													    <label for="inputEmail3" class="col-sm-2 control-label" style="text-align:left;">${item.columnComment}</label>
 													    <div class="col-sm-2">
 													      <input type="text" value="$!{${lowerName}.${item.domainPropertyName}}" name="${item.domainPropertyName}" id="${item.domainPropertyName}" class="form-control" />
 													    </div>
@@ -33,7 +33,7 @@
 							  </fieldset>
 							  			<div class="form-group mno">
 											<div class="col-sm-offset-1 col-sm-6">
-												<button type="button" class="btn btn-default" id="formReturn" data-dismiss="modal" onclick="doUrl('$!{basePath}/${bussPackage}/${lowerName}.do?list')">返回</button>
+												<button type="button" class="btn btn-default" id="formReturn" data-dismiss="modal" onclick="doUrl('$!{basePath}/${projectName}/${lowerName}.do?list')">返回</button>
         									 </div>
         							    </div>
 						</form>
