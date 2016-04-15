@@ -22,6 +22,10 @@ Jeecg-P3插件开发框架
 	6.数据库配置文件：
 	  jeecg-p3-web/src/main/resources/dbconfig.properties
 
+【在线演示】
+==========
+* 地址：[http://demo.jeecg.org/jeecg-p3-web](http://demo.jeecg.org/jeecg-p3-web)
+
 【项目说明】
 
 	jeecg-p3-web               | 启动主项目
