@@ -67,4 +67,4 @@ Jeecg-P3插件开发框架
 技术交流
 ==========
 * 论坛：[www.jeecg.org](http://www.jeecg.org)
-* Jeecg开发群②: 106838471
+* Jeecg-P3插件开发群① 293658367
