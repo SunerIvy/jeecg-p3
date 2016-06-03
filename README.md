@@ -22,15 +22,15 @@ Jeecg-P3插件开发框架
 	6.数据库配置文件：
 	  jeecg-p3-web/src/main/resources/dbconfig.properties
 
-【在线演示】
+【插件演示】
 ==========
-* 地址：[http://demo.jeecg.org/jeecg-p3-web](http://demo.jeecg.org/jeecg-p3-web)
+* 地址：[http://demo.jeecg.org/p3/](http://demo.jeecg.org/p3/)
 
 【项目说明】
 
 	jeecg-p3-web               | 启动主项目
-	jeecg-p3-biz-demo          | 插件项目Demo
-    jeecg-p3-project-generator | 生成新插件工具	
+	jeecg-p3-biz-demo          | 第一个插件Demo
+    jeecg-p3-biz-qywx          | 微信企业号插件（正式）
 
 【开发入门】
 
@@ -39,22 +39,22 @@ Jeecg-P3插件开发框架
 		2.项目为maven工程，采用maven方式导入eclipse等IDE开发工具 
 
 	☆快捷启动：
-		第一步：创建Mysql数据库jeecg-p3，采用UTF-8编码，执行下面数据库脚本
-				jeecg-p3-web/doc/sql/jeecg-p3-mysql.sql
+		第一步：创建Mysql数据库jeecg-p3，采用UTF-8编码，执行对应插件的数据库脚本
+				{插件项目名}\doc\db\{插件项目名}-mysql.sql
 		第二步：双击运行jeecg-p3-web\bin\run-tomcat7.bat或bin\run-tomcat.bat，
 				启动Web服务器（第一次运行，需要下载依赖jar包，请耐心等待）。
-		第三步：测试访问地址
+		第三步：Demo访问地址
 				1. http://localhost/jeecg-p3-web/p3/wxActInvite.do?list
 				2. http://localhost/jeecg-p3-web/p3/auth.do?list	
 					
 	☆Eclipse运行步骤：
 		第一步：创建Mysql数据库jeecg-p3，采用UTF-8编码，执行下面数据库脚本
-				jeecg-p3-web/doc/sql/jeecg-p3-mysql.sql
+				{插件项目名}\doc\db\{插件项目名}-mysql.sql
 		第二步：采用maven方式启动项目 (jeecg-p3-web)
 				项目右建->debug as->debug configurations->选中jeecg-p3-web项目->输入命令：tomcat:run
 				注意：[1].update snapshots需要选中，官方会不断更新底层包
 					  [2].插件项目不能单独启动，需以maven方式引入jeecg-p3-web项目中，启动web主项目
-		第四步：测试访问地址
+		第四步：Demo访问地址
 				1. http://localhost/jeecg-p3-web/p3/wxActInvite.do?list
 				2. http://localhost/jeecg-p3-web/p3/auth.do?list
 
@@ -63,12 +63,9 @@ Jeecg-P3插件开发框架
 	1.工具类：jeecg-p3-web/src/main/java/util/P3CodeGenerateUtil.java
 	2.配置文件：jeecg-p3-web/src/main/resources/p3-cg-config.properties
 	
-【插件生成器】
 
-	1.工具类：jeecg-p3-project-generator/src/main/java/GeneratorMain.java
-	2.配置文件：jeecg-p3-project-generator/src/main/resources/project-generator.properties
 	
 技术交流
 ==========
+* QQ交流群: 293658367
 * 论坛：[www.jeecg.org](http://www.jeecg.org)
-* Jeecg-P3插件开发群① 293658367
