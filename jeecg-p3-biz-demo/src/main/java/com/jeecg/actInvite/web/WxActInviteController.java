@@ -41,7 +41,7 @@ public class WxActInviteController extends BaseController{
 			@RequestParam(required = false, value = "pageNo", defaultValue = "1") int pageNo,
 			@RequestParam(required = false, value = "pageSize", defaultValue = "10") int pageSize) throws Exception{
 		 try {
-			 LOG.info(request, " back list");
+			 LOG.info(request, " back list 111 ");
 			 	//分页数据
 			 MiniDaoPage<WxActInvite> list =  wxActCommoninviteDao.getAll(query,pageNo,pageSize);
 			 VelocityContext velocityContext = new VelocityContext();

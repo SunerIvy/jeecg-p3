@@ -7,7 +7,7 @@ SET
 		   ${item.columnName} = :${lowerName}.${item.domainPropertyName},
 		${"</#if>"}
 	<#else>
-	   ${"<#if"} ${lowerName}.${item.domainPropertyName} ${"?exists &&"} ${lowerName}.${item.domainPropertyName} ${"?length gt 0>"}
+	   ${"<#if"} ${lowerName}.${item.domainPropertyName} ${"?exists>"}
 		   ${item.columnName} = :${lowerName}.${item.domainPropertyName},
 		${"</#if>"}
 	</#if>

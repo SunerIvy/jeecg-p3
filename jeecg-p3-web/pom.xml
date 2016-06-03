@@ -170,5 +170,20 @@
 			<version>1.0.1</version>
 			<type>jar</type>
 		</dependency>
+		<!-- 插件：微信企业号  -->
+		<dependency>
+			<groupId>org.p3framework</groupId>
+			<artifactId>jeecg-p3-biz-qywx</artifactId>
+			<version>1.0.0</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jeewx</groupId>
+			<artifactId>jeewx-qywx-api</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
 	</dependencies>
 </project>
