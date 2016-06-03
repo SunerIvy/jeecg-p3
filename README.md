@@ -3,14 +3,14 @@ Jeecg-P3插件开发框架
 特点：业务组件以JAR方式提供，插件模式、松耦合、可插拔、支持独立部署，也可以无缝集成Jeecg平台中。
 
 【项目说明】
-==========
+
 	jeecg-p3-web               | 启动主项目
 	jeecg-p3-biz-demo          | 第一个插件Demo
     jeecg-p3-biz-qywx          | 微信企业号插件（正式）
 	
 	
 【插件演示】
-==========
+
 * 地址：[http://demo.jeecg.org/p3/](http://demo.jeecg.org/p3/)
 
 	
