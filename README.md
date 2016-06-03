@@ -4,7 +4,7 @@ Jeecg-P3插件开发框架
 
 	  
 【架构说明】
-
+==========
     1.Jeecg-P3 采用SpringMvc + Minidao + Velocity + Maven(构建) 框架技术
     2.插件引入方式
         pom.xml文件中，引入新开发的插件
@@ -27,13 +27,13 @@ Jeecg-P3插件开发框架
 * 地址：[http://demo.jeecg.org/p3/](http://demo.jeecg.org/p3/)
 
 【项目说明】
-
+==========
 	jeecg-p3-web               | 启动主项目
 	jeecg-p3-biz-demo          | 第一个插件Demo
     jeecg-p3-biz-qywx          | 微信企业号插件（正式）
 
 【开发入门】
-
+==========
 	☆准备工作：
 		1.标准开发工具：eclipse + jdk7 + tomcat7 + mysql
 		2.项目为maven工程，采用maven方式导入eclipse等IDE开发工具 
