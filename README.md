@@ -43,9 +43,9 @@ Jeecg-P3插件开发框架
 				{插件项目名}\doc\db\{插件项目名}-mysql.sql
 		第二步：双击运行jeecg-p3-web\bin\run-tomcat7.bat或bin\run-tomcat.bat，
 				启动Web服务器（第一次运行，需要下载依赖jar包，请耐心等待）。
-		第三步：Demo访问地址
-				1. http://localhost/jeecg-p3-web/p3/wxActInvite.do?list
-				2. http://localhost/jeecg-p3-web/p3/auth.do?list	
+		第三步：项目访问地址
+				http://localhost/jeecg-p3-web
+				
 					
 	☆Eclipse运行步骤：
 		第一步：创建Mysql数据库jeecg-p3，采用UTF-8编码，执行下面数据库脚本
@@ -54,9 +54,8 @@ Jeecg-P3插件开发框架
 				项目右建->debug as->debug configurations->选中jeecg-p3-web项目->输入命令：tomcat:run
 				注意：[1].update snapshots需要选中，官方会不断更新底层包
 					  [2].插件项目不能单独启动，需以maven方式引入jeecg-p3-web项目中，启动web主项目
-		第四步：Demo访问地址
-				1. http://localhost/jeecg-p3-web/p3/wxActInvite.do?list
-				2. http://localhost/jeecg-p3-web/p3/auth.do?list
+		第四步：项目访问地址
+				http://localhost/jeecg-p3-web
 
 【代码生成器】
 
