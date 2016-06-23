@@ -1,0 +1,39 @@
+<div class="col-md-2 ">
+		<div class="bs_border h95">
+			<span class="apply">
+				<a href="http://www.jeecg.org" target="_blank">
+					官方网站
+				</a>
+			</span>
+			<span class="SubM">
+				<a href="http://git.oschina.net/jeecg/jeecg-p3" target="_blank">
+					开发指南
+				</a>
+			</span>
+		</div>
+		<div class="bs_border accor" style="padding:0;">
+			<div id="accordion">
+				<div>
+					<h5 class="a_right"><a href="javascript:void(0);">演示示例</a></h5>
+		             <ul>
+		                <li><a href="javascript:loadContent('$!{basePath}/p3/wxActInvite.do?list')">普通列表</a></li> 
+		                <li><a href="javascript:loadContent('$!{basePath}/p3/auth.do?list')">树列表</a></li>
+		            </ul>
+				</div>
+		    </div>	
+		</div>
+		<div class="bs_border h85">
+			<p>Jeecg-P3 插件开发平台</p>
+			<p>QQ群 : 293658367</p>
+			<p>论坛  : www.jeecg.org</p>
+		</div>		
+</div>
+
+<script type="text/javascript">
+	 /**加载主体页面**/
+    function loadContent(url){
+			//location.href="#navi";
+			$("#center").attr("src",url);
+	}
+	control(); 
+</script>
