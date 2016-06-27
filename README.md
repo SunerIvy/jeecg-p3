@@ -9,9 +9,9 @@ Jeecg-P3插件开发框架
     jeecg-p3-biz-qywx          | 微信企业号插件（正式）
 	
 	
-【插件演示】
+【云应用平台】
 
-* 地址：[http://demo.jeecg.org/p3/](http://demo.jeecg.org/p3/)
+* 在线演示：[http://yun.jeecg.org](http://yun.jeecg.org)
 
 	
 【架构说明】
