@@ -13,7 +13,7 @@ Jeecg-P3插件开发框架
 
 * 在线演示：[http://yun.jeecg.org](http://yun.jeecg.org)
 * [开发环境搭建文档](http://www.jeecg.org/forum.php?mod=viewthread&tid=3157&extra=page%3D1)
-	
+* [Jeecg-p3开发入门视频](http://www.jeecg.org/forum.php?mod=viewthread&tid=3173&extra=page%3D1)
 【架构说明】
 
     1.Jeecg-P3 采用SpringMvc + Minidao + Velocity + Maven(构建) 框架技术
