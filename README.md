@@ -76,7 +76,6 @@ Jeecg-P3插件开发框架
 
 
 ![github](http://www.jeecg.org/data/attachment/forum/201606/27/123504y69rv9zqxwevvv66.png "jeewx")
-![github](http://static.oschina.net/uploads/space/2016/0424/131025_trWY_930898.png "jeewx")
 ![github](http://static.oschina.net/uploads/space/2016/0424/131056_lr02_930898.png "jeewx")
 ![github](http://static.oschina.net/uploads/space/2016/0424/131105_BSlN_930898.png "jeewx")
 ![github](http://static.oschina.net/uploads/space/2016/0424/131036_oV7J_930898.png "jeewx")
