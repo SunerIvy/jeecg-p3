@@ -72,6 +72,7 @@ Jeecg-P3插件开发框架
 ==========
 * QQ交流群: 293658367
 * 论坛：[www.jeecg.org](http://www.jeecg.org)
+* 在线听课：[JEECG-P3微服务插件开发专题公开课](https://ke.qq.com/course/140001#term_id=100157775)
 
 
 
