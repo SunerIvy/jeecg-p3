@@ -6,7 +6,8 @@ Jeecg-P3插件开发框架
 
 	jeecg-p3-web               | 启动主项目
 	jeecg-p3-biz-demo          | 第一个插件Demo
-    jeecg-p3-biz-qywx          | 微信企业号插件（正式）
+    jeecg-p3-biz-qywx          | 微信企业号（插件）
+	jeecg-p3-biz-cms          | 微信CMS系统（插件）
 	
 	
 【云应用平台】

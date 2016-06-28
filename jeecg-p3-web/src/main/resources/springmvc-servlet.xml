@@ -29,7 +29,12 @@
     <mvc:resources location="classpath:/content/" mapping="/content/**" cache-period="864000" /><!-- 24 * 3600 * 10 -->
     <mvc:resources location="/upload/" mapping="/upload/**" cache-period="864000" /><!-- 24 * 3600 * 10 -->
     <mvc:resources location="/template/" mapping="/template/**" cache-period="864000" /><!-- 24 * 3600 * 10 -->
-		
+	
+	 <!-- 支持jsp -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">    
+        <property name="prefix" value="/"/> 
+        <property name="suffix" value=".jsp"/>    
+    </bean>
     
     <!-- 注册默认转换器 -->
 	<mvc:annotation-driven>
