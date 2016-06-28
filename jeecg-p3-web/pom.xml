@@ -185,5 +185,14 @@
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
+		<!-- 插件：cms系统  -->
+		<dependency>
+			<groupId>org.p3framework</groupId>
+			<artifactId>jeecg-p3-biz-cms</artifactId>
+			<version>1.0.0</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		
 	</dependencies>
 </project>
