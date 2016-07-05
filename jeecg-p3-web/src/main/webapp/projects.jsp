@@ -61,9 +61,9 @@
                                             <small>创建于 2016.04.15</small>
                                         </td>
                                         <td class="project-completion">
-                                            <small>当前进度： 78%</small>
+                                            <small>当前进度： 100%</small>
                                             <div class="progress progress-mini">
-                                                <div style="width: 78%;" class="progress-bar"></div>
+                                                <div style="width: 100%;" class="progress-bar"></div>
                                             </div>
                                         </td>
                                         <td class="project-people">
@@ -72,6 +72,31 @@
                                         </td>
                                         <td class="project-actions">
                                             <a href="qywx/index.do" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> 进入系统</a>
+                                        </td>
+                                    </tr>
+									
+									<tr>
+                                        <td class="project-status">
+                                            <span class="label label-primary">进行中
+                                        </td>
+                                        <td class="project-title">
+                                            <a href="#">CMS系统</a>
+                                            <br/>
+                                            <small>创建于 2016.06.15</small>
+                                        </td>
+                                        <td class="project-completion">
+                                            <small>当前进度：100%</small>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 100%;" class="progress-bar"></div>
+                                            </div>
+                                        </td>
+                                        <td class="project-people">
+                                            <a href="#"><img alt="image" class="img-circle" src="plug-in-ui/hplus/img/a7.jpg"></a>
+                                            <a href="#"><img alt="image" class="img-circle" src="plug-in-ui/hplus/img/a6.jpg"></a>
+                                        </td>
+                                        <td class="project-actions">
+                                            <a href="cms/index.do" class="btn btn-white btn-sm"><i class="fa fa-cloud"></i> 演示</a>
+                                            <a href="http://git.oschina.net/jeecg/jeecg-p3"  class="btn btn-white btn-sm"><i class="fa fa-upload"></i> 下载</a>
                                         </td>
                                     </tr>
                                     
