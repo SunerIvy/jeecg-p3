@@ -6,7 +6,7 @@ import org.jeecgframework.minidao.annotation.Sql;
 import org.jeecgframework.minidao.pojo.MiniDaoPage;
 import org.springframework.stereotype.Repository;
 
-import ${domainPackage}.${className};
+import ${domainPackage}.${className}Entity;
 
 /**
  * 描述：</b>${className}Dao<br>
@@ -23,20 +23,20 @@ public interface ${className}Dao{
 	 * @return
 	 */
 	@Sql("SELECT * FROM ${tableName} WHERE ID = :id")
-	${className} get(@Param("id") String id);
+	${className}Entity get(@Param("id") String id);
 	
 	/**
 	 * 修改数据
 	 * @param ${lowerName}
 	 * @return
 	 */
-	int update(@Param("${lowerName}") ${className} ${lowerName});
+	int update(@Param("${lowerName}") ${className}Entity ${lowerName});
 	
 	/**
 	 * 插入数据
 	 * @param act
 	 */
-	void insert(@Param("${lowerName}") ${className} ${lowerName});
+	void insert(@Param("${lowerName}") ${className}Entity ${lowerName});
 	
 	/**
 	 * 通用分页方法，支持（oracle、mysql、SqlServer、postgresql）
@@ -45,11 +45,11 @@ public interface ${className}Dao{
 	 * @param rows
 	 * @return
 	 */
-	@ResultType(${className}.class)
-	public MiniDaoPage<${className}> getAll(@Param("${lowerName}") ${className} ${lowerName},@Param("page")  int page,@Param("rows") int rows);
+	@ResultType(${className}Entity.class)
+	public MiniDaoPage<${className}Entity> getAll(@Param("${lowerName}") ${className}Entity ${lowerName},@Param("page")  int page,@Param("rows") int rows);
 	
 	@Sql("DELETE from ${tableName} WHERE ID = :${lowerName}.id")
-	public void delete(@Param("${lowerName}") ${className} ${lowerName});
+	public void delete(@Param("${lowerName}") ${className}Entity ${lowerName});
 	
 }
 

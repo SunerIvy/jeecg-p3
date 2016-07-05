@@ -13,7 +13,7 @@ import java.math.BigDecimal;
  * @since：${nowDate}
  * @version:1.0
  */
-public class ${className} implements Serializable{
+public class ${className}Entity implements Serializable{
 	private static final long serialVersionUID = 1L;
 	${feilds}
 }

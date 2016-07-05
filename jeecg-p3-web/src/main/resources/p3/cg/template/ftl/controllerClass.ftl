@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import ${domainPackage}.${className};
-import ${daoPackage}.${className}Dao;
+import ${domainPackage}.${className}Entity;
+import ${servicePackage}.${className}Service;
 
  /**
  * 描述：</b>${className}Controller<br>${codeName}
@@ -29,20 +29,20 @@ import ${daoPackage}.${className}Dao;
 @RequestMapping("/${projectName}/${lowerName}")
 public class ${className}Controller extends BaseController{
   @Autowired
-  private ${className}Dao ${lowerName}Dao;
+  private ${className}Service ${lowerName}Service;
   
 	/**
 	  * 列表页面
 	  * @return
 	  */
 	@RequestMapping(params = "list",method = {RequestMethod.GET,RequestMethod.POST})
-	public void list(@ModelAttribute ${className} query,HttpServletRequest request,HttpServletResponse response,
+	public void list(@ModelAttribute ${className}Entity query,HttpServletRequest request,HttpServletResponse response,
 			@RequestParam(required = false, value = "pageNo", defaultValue = "1") int pageNo,
 			@RequestParam(required = false, value = "pageSize", defaultValue = "10") int pageSize) throws Exception{
 			try {
 			 	LOG.info(request, " back list");
 			 	//分页数据
-				MiniDaoPage<${className}> list =  ${lowerName}Dao.getAll(query,pageNo,pageSize);
+				MiniDaoPage<${className}Entity> list =  ${lowerName}Service.getAll(query,pageNo,pageSize);
 				VelocityContext velocityContext = new VelocityContext();
 				velocityContext.put("${lowerName}",query);
 				velocityContext.put("pageInfos",SystemTools.convertPaginatedList(list));
@@ -61,7 +61,7 @@ public class ${className}Controller extends BaseController{
 	public void ${lowerName}Detail(@RequestParam(required = true, value = "id" ) String id,HttpServletResponse response,HttpServletRequest request)throws Exception{
 			VelocityContext velocityContext = new VelocityContext();
 			String viewName = "${projectName}/${bussPackage}/${lowerName}-detail.vm";
-			${className} ${lowerName} = ${lowerName}Dao.get(id);
+			${className}Entity ${lowerName} = ${lowerName}Service.get(id);
 			velocityContext.put("${lowerName}",${lowerName});
 			ViewVelocity.view(request,response,viewName,velocityContext);
 	}
@@ -83,12 +83,12 @@ public class ${className}Controller extends BaseController{
 	 */
 	@RequestMapping(params = "doAdd",method ={RequestMethod.GET, RequestMethod.POST})
 	@ResponseBody
-	public AjaxJson doAdd(@ModelAttribute ${className} ${lowerName}){
+	public AjaxJson doAdd(@ModelAttribute ${className}Entity ${lowerName}){
 		AjaxJson j = new AjaxJson();
 		try {
 		    String randomSeed = UUID.randomUUID().toString().replaceAll("-", "").toUpperCase();
 		    ${lowerName}.setId(randomSeed);
-			${lowerName}Dao.insert(${lowerName});
+			${lowerName}Service.insert(${lowerName});
 			j.setMsg("保存成功");
 		} catch (Exception e) {
 		    log.info(e.getMessage());
@@ -105,7 +105,7 @@ public class ${className}Controller extends BaseController{
 	@RequestMapping(params="toEdit",method = RequestMethod.GET)
 	public void toEdit(@RequestParam(required = true, value = "id" ) String id,HttpServletResponse response,HttpServletRequest request) throws Exception{
 			 VelocityContext velocityContext = new VelocityContext();
-			 ${className} ${lowerName} = ${lowerName}Dao.get(id);
+			 ${className}Entity ${lowerName} = ${lowerName}Service.get(id);
 			 velocityContext.put("${lowerName}",${lowerName});
 			 String viewName = "${projectName}/${bussPackage}/${lowerName}-edit.vm";
 			 ViewVelocity.view(request,response,viewName,velocityContext);
@@ -117,10 +117,10 @@ public class ${className}Controller extends BaseController{
 	 */
 	@RequestMapping(params = "doEdit",method ={RequestMethod.GET, RequestMethod.POST})
 	@ResponseBody
-	public AjaxJson doEdit(@ModelAttribute ${className} ${lowerName}){
+	public AjaxJson doEdit(@ModelAttribute ${className}Entity ${lowerName}){
 		AjaxJson j = new AjaxJson();
 		try {
-			${lowerName}Dao.update(${lowerName});
+			${lowerName}Service.update(${lowerName});
 			j.setMsg("编辑成功");
 		} catch (Exception e) {
 		    log.info(e.getMessage());
@@ -140,9 +140,9 @@ public class ${className}Controller extends BaseController{
 	public AjaxJson doDelete(@RequestParam(required = true, value = "id" ) String id){
 			AjaxJson j = new AjaxJson();
 			try {
-			    ${className} ${lowerName} = new ${className}();
+			    ${className}Entity ${lowerName} = new ${className}Entity();
 				${lowerName}.setId(id);
-				${lowerName}Dao.delete(${lowerName});
+				${lowerName}Service.delete(${lowerName});
 				j.setMsg("删除成功");
 			} catch (Exception e) {
 			    log.info(e.getMessage());
