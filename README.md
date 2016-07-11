@@ -4,10 +4,11 @@ Jeecg-P3插件开发框架
 
 【项目说明】
 
-	jeecg-p3-web               | 启动主项目
-	jeecg-p3-biz-demo          | 第一个插件Demo
+	jeecg-p3-web               | 启动主项目(基础)
+	jeecg-p3-project-generator | 项目骨架生成工具(基础)
+	jeecg-p3-biz-demo          | hello word Demo（插件）
     jeecg-p3-biz-qywx          | 微信企业号（插件）
-	jeecg-p3-biz-cms          | 微信CMS系统（插件）
+	jeecg-p3-biz-cms           | 微信CMS系统（插件）
 	
 	
 【云应用平台】
