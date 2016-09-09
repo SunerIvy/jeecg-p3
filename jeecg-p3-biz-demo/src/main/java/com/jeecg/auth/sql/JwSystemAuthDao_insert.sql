@@ -1,5 +1,5 @@
 insert into 
-jw_auth
+jp_demo_auth
       ( auth_id,auth_name,auth_type,auth_contr,parent_auth_id,leaf_ind) 
 values
       (:auth.authId,

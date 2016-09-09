@@ -16,7 +16,7 @@ public interface WxActInviteDao {
 	 * @param id
 	 * @return
 	 */
-	@Sql("SELECT * FROM WX_ACT_INVITE WHERE ID = :id")
+	@Sql("SELECT * FROM jp_demo_activity WHERE ID = :id")
 	WxActInvite get(@Param("id") String id);
 
 
@@ -43,6 +43,6 @@ public interface WxActInviteDao {
 	@ResultType(WxActInvite.class)
 	public MiniDaoPage<WxActInvite> getAll(@Param("act") WxActInvite act,@Param("page")  int page,@Param("rows") int rows);
 	
-	@Sql("DELETE from WX_ACT_INVITE WHERE ID = :act.id")
+	@Sql("DELETE from jp_demo_activity WHERE ID = :act.id")
 	public void delete(@Param("act") WxActInvite act);
 }

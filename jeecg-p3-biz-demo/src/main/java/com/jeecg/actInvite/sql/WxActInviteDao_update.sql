@@ -1,4 +1,4 @@
-UPDATE wx_act_invite 
+UPDATE jp_demo_activity 
 SET 
 	<#if act.id ?exists && act.id ?length gt 0>
 	    id = :act.id

@@ -19,7 +19,7 @@ public interface JwSystemAuthDao {
 	 * @param id
 	 * @return
 	 */
-	@Sql("SELECT * FROM JW_AUTH WHERE ID = :id")
+	@Sql("SELECT * FROM jp_demo_auth WHERE ID = :id")
 	JwSystemAuth get(@Param("id") Long id);
 
 
@@ -46,7 +46,7 @@ public interface JwSystemAuthDao {
 	@ResultType(JwSystemAuth.class)
 	public MiniDaoPage<JwSystemAuth> getAll(@Param("auth") JwSystemAuth act,@Param("page")  int page,@Param("rows") int rows);
 	
-	@Sql("DELETE from JW_AUTH WHERE ID = :auth.id")
+	@Sql("DELETE from jp_demo_auth WHERE ID = :auth.id")
 	public void delete(@Param("auth") JwSystemAuth auth);
 	
 	@ResultType(JwSystemAuth.class)

@@ -1,2 +1,2 @@
-SELECT * FROM wx_act_invite where 1=1
+SELECT * FROM jp_demo_activity where 1=1
 <#include "WxActInviteDao_condition.sql">

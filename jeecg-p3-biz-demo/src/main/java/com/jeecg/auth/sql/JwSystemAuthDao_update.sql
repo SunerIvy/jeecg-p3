@@ -1,4 +1,4 @@
-UPDATE jw_auth 
+UPDATE jp_demo_auth 
 SET 
 	<#if auth.id ?exists && auth.id ?length gt 0>
 	    id = :auth.id

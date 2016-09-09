@@ -1,5 +1,5 @@
 insert into 
-	wx_act_invite
+	jp_demo_activity
       ( id,name,begin_time,end_time,hdurl) 
 values
       ('${act.id}',

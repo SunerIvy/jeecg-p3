@@ -9,7 +9,7 @@
 			<form role="form" class="form-inline" action="$!{basePath}/p3/auth.do?list" method="post"  id="formSubmit">
 				<div  class="col-md-10" style="width:100%">
 								<div class="panel panel-default">
-								  <div class="panel-heading">Jeecg-P3(树列表)：权限管理列表 1111 </div>
+								  <div class="panel-heading">Jeecg-P3(树列表)：权限管理列表</div>
 								  <div class="panel-body">
 								  		<div class="search">
 															 <div class="form-group col-sm-4">

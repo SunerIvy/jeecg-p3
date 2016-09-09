@@ -4,10 +4,14 @@ import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.apache.log4j.Logger;
 import org.apache.velocity.VelocityContext;
 import org.jeecgframework.minidao.pojo.MiniDaoPage;
+import org.jeecgframework.p3.core.author.LoginUser;
 import org.jeecgframework.p3.core.common.utils.AjaxJson;
 import org.jeecgframework.p3.core.page.SystemTools;
+import org.jeecgframework.p3.core.util.plugin.ContextHolderUtils;
 import org.jeecgframework.p3.core.util.plugin.ViewVelocity;
 import org.jeecgframework.p3.core.web.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+
 import com.jeecg.actInvite.dao.WxActInviteDao;
 import com.jeecg.actInvite.entity.WxActInvite;
 
@@ -29,7 +34,8 @@ import com.jeecg.actInvite.entity.WxActInvite;
 @Controller
 @RequestMapping("/p3/wxActInvite")
 public class WxActInviteController extends BaseController{
-
+	private static final Logger logger = Logger.getLogger(WxActInviteController.class);
+	
 	@Autowired
 	private WxActInviteDao wxActCommoninviteDao;
 	/**
@@ -41,13 +47,18 @@ public class WxActInviteController extends BaseController{
 			@RequestParam(required = false, value = "pageNo", defaultValue = "1") int pageNo,
 			@RequestParam(required = false, value = "pageSize", defaultValue = "10") int pageSize) throws Exception{
 		 try {
-			 LOG.info(request, " back list 111 ");
+			 LOG.info(request, " back list");
 			 	//分页数据
 			 MiniDaoPage<WxActInvite> list =  wxActCommoninviteDao.getAll(query,pageNo,pageSize);
 			 VelocityContext velocityContext = new VelocityContext();
 			 velocityContext.put("wxActCommoninvite",query);
 			 velocityContext.put("pageInfos",SystemTools.convertPaginatedList(list));
 			 String viewName = "actInvite/wxActCommoninvite-list.vm";
+			 
+			 LoginUser u = ContextHolderUtils.getLoginSessionUser();
+			 logger.info(" -- test -- "+ u.getRealName());
+			 
+			 
 			 ViewVelocity.view(request,response,viewName,velocityContext);
 		} catch (Exception e) {
 			e.printStackTrace();
