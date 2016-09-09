@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 @RequestMapping("/${projectName}/index")
-public class ${projectName}IndexController extends BaseController{
+public class ${projectNameUpperName}IndexController extends BaseController{
 
 	/**
 	 * 跳转首页

@@ -16,6 +16,13 @@ public class FileUtil {
 		}
 		try {
 			String fileName = fileDirectoryAndName;
+			//文件名首字母大写
+			if (fileName.endsWith(".java")) {
+				String s1 = fileName.substring(0, fileName.lastIndexOf("\\") + 1);
+				String s2 = fileName.substring(fileName.lastIndexOf("\\") + 1);
+				s2 = FileUtil.captureName(s2);
+				fileName = s1 + s2;
+			} 
 			// 创建File对象，参数为String类型，表示目录名
 			File myFile = new File(fileName);
 			// 判断文件是否存在，如果不存在则调用createNewFile()方法创建新目录，否则跳至异常处理代码
@@ -36,6 +43,14 @@ public class FileUtil {
 			ex.printStackTrace();
 		}
 	}
+	
+	//首字母大写
+	public static String captureName(String name) {
+        char[] cs=name.toCharArray();
+        cs[0]-=32;
+        return String.valueOf(cs);
+        
+    }
 
 	public static boolean createFile(String destFileName) {
 		File file = new File(destFileName);

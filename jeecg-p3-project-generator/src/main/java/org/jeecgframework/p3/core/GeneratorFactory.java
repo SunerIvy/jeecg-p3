@@ -10,6 +10,7 @@ import org.jeecgframework.p3.core.util.PropertiesUtil;
 public class GeneratorFactory {
 	private static final String TEMPLATE_PACKAGE = "project-template";
 	private static final String PROJECT_NAME_KEY = "${projectName}";
+	private static final String PROJECT_NAME_KEY_UPPERNAME = "${projectNameUpperName}";
 	private static final String PROJECT_NAME_INDEX = "jeecg-p3-biz-";
 	//模板路径
 	private static  String templdate_url; //= "src/main/resources/project-template";
@@ -86,6 +87,7 @@ public class GeneratorFactory {
 						String content = FileUtil.read(path);
 						if(content!=null){
 							content = content.replace(PROJECT_NAME_KEY, projectName).trim();
+							content = content.replace(PROJECT_NAME_KEY_UPPERNAME, GeneratorFactory.upperName(projectName).trim());
 						}
 						path = path.substring(path.indexOf(TEMPLATE_PACKAGE), path.length()).replace(TEMPLATE_PACKAGE+"\\", "").replace("."+PROJECT_NAME_KEY, "."+lowerName(projectName)).replace(PROJECT_NAME_KEY,lowerName(projectName));
 						if(!TEMPLATE_PACKAGE.equals(path)){

@@ -13,7 +13,7 @@ public class GeneratorMain {
 	 */
 	public static void main(String[] args) throws Exception {
 		//项目名
-		String projectName = "builderform";//项目名称 ：P3-Biz-{自定义模块名}
+		String projectName = "bizcore";//项目名称 ：jeecg-p3-biz-{自定义模块名}
 		GeneratorFactory.doMake(projectName);
 	}
 }

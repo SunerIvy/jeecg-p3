@@ -22,6 +22,14 @@
 				<enabled>true</enabled>
 			</snapshots>
         </repository>
+        <repository>
+			<id>jeecg-snapshots</id>
+			<name>jeecg-snapshots Repository</name>
+			<url>http://maven.jeecg.org/nexus/content/repositories/snapshots</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
     </repositories>
 </project>
 
