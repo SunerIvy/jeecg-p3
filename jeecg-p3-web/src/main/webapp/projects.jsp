@@ -51,9 +51,33 @@
 
                             <table class="table table-hover">
                                 <tbody>
-                                 <tr>
+								 <tr>
                                         <td class="project-status">
                                             <span class="label label-primary">进行中
+                                        </td>
+                                        <td class="project-title">
+                                            <a href="#">常用示例</a>
+                                            <br/>
+                                            <small>创建于 2016.04.15</small>
+                                        </td>
+                                        <td class="project-completion">
+                                                <small>当前进度： 99%</small>
+                                                <div class="progress progress-mini">
+                                                    <div style="width: 99%;" class="progress-bar"></div>
+                                                </div>
+                                        </td>
+                                        <td class="project-people">
+                                            <a href="#"><img alt="image" class="img-circle" src="plug-in-ui/hplus/img/a2.jpg"></a>
+                                        </td>
+                                        <td class="project-actions">
+                                            <a href="demo/index.do" class="btn btn-white btn-sm"><i class="fa fa-cloud"></i> 演示</a>
+                                            <a href="http://git.oschina.net/jeecg/jeecg-p3" class="btn btn-white btn-sm"><i class="fa fa-upload"></i> 下载</a>
+                                        </td>
+                                    </tr>
+									
+                                 <tr>
+                                        <td class="project-status">
+                                            <span class="label label-primary">已完成
                                         </td>
                                         <td class="project-title">
                                             <a href="#">开源微信企业号平台</a>
@@ -77,7 +101,7 @@
 									
 									<tr>
                                         <td class="project-status">
-                                            <span class="label label-primary">进行中
+                                            <span class="label label-primary">已完成
                                         </td>
                                         <td class="project-title">
                                             <a href="#">CMS系统</a>

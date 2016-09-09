@@ -73,8 +73,8 @@ Jeecg-P3 微服务框架（插件开发与容器技术最佳实践）
 技术交流
 ==========
 * QQ交流群: 293658367
-* 论坛：[www.jeecg.org](http://www.jeecg.org)
-* 在线听课：[JEECG-P3微服务插件开发专题公开课](https://ke.qq.com/course/140001#term_id=100157775)
+* 技术论坛：[www.jeecg.org](http://www.jeecg.org)
+
 
 
 
