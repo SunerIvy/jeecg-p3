@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import ${domainPackage}.${className}Entity;
 
 /**
- * 描述：</b>${className}Dao<br>
+ * 描述：${codeName}
  * @author：${author}
  * @since：${nowDate}
  * @version:1.0

@@ -89,6 +89,8 @@
 		<property name="basePackage" value="com.jeecg.*"></property>
 		<!-- 使用的注解,默认是Minidao,推荐 Repository -->
 		<property name="annotation" value="org.springframework.stereotype.Repository"></property>
+		<!-- Minidao拦截器配置 -->
+		<property name="emptyInterceptor" ref="minidaoInterceptor"></property>
 	</bean>
 
 </beans>

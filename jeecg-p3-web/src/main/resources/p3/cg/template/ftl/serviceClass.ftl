@@ -5,8 +5,8 @@ import org.jeecgframework.minidao.pojo.MiniDaoPage;
 import ${domainPackage}.${className}Entity;
 
 /**
- * 描述：</b>${className}Service<br>
- * @author:${author}
+ * 描述：${codeName}
+ * @author: ${author}
  * @since：${nowDate}
  * @version:1.0
  */

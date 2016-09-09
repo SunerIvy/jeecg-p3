@@ -29,10 +29,10 @@
     <mvc:resources location="classpath:/content/" mapping="/content/**" cache-period="864000" /><!-- 24 * 3600 * 10 -->
     <mvc:resources location="/upload/" mapping="/upload/**" cache-period="864000" /><!-- 24 * 3600 * 10 -->
     <mvc:resources location="/template/" mapping="/template/**" cache-period="864000" /><!-- 24 * 3600 * 10 -->
-	
-	 <!-- 支持jsp -->
+		
+    <!-- 支持jsp -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">    
-        <property name="prefix" value="/"/> 
+        <property name="prefix" value="/content/plug-in/ueditor/jsp/"/> 
         <property name="suffix" value=".jsp"/>    
     </bean>
     
@@ -51,7 +51,6 @@
 	       <bean class="org.springframework.http.converter.FormHttpMessageConverter">   
 	           <property name="supportedMediaTypes">   
 	               <list>   
-	                   <value>text/plain;charset=UTF-8</value>   
 	                   <value>text/html;charset=UTF-8</value>   
 	               </list>   
 	           </property>   
@@ -59,6 +58,7 @@
             <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
                 <property name="supportedMediaTypes">
                     <list>
+                    	<value>text/plain;charset=UTF-8</value>
                         <value>application/xml;charset=UTF-8</value>
                         <value>application/json;charset=UTF-8</value>
                     </list>
@@ -75,6 +75,7 @@
                 <bean class="org.springframework.http.converter.StringHttpMessageConverter">
                     <property name="supportedMediaTypes">
                         <list>
+                        	<value>text/plain;charset=UTF-8</value>
                             <value>text/html;charset=UTF-8</value>
                         </list>
                     </property>

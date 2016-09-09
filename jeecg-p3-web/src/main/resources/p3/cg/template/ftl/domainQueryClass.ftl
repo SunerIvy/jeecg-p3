@@ -5,8 +5,8 @@ import java.util.Date;
 import java.math.BigDecimal;
 
 /**
- * 描述：</b>${className}Vo:${codeName}<br>
- * @author ${author}
+ * 描述：${codeName}
+ * @author: ${author}
  * @since：${nowDate}
  * @version:1.0
  */

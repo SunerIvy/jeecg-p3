@@ -7,7 +7,7 @@
 	<artifactId>jeecg-p3-web</artifactId>
 	<name>jeecg-p3-web</name>
 	<packaging>war</packaging>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	
 	<!-- 父POM -->
 	<parent>
@@ -103,7 +103,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>P3-Web</finalName>
+		<finalName>jeecg-p3-web</finalName>
 		<resources>
 			<resource>
 				<directory>src/main/java</directory>
@@ -161,13 +161,21 @@
 			<version>1.0-SNAPSHOT</version>
 			<type>jar</type>
 		</dependency>
+		<dependency>
+			<groupId>org.p3framework</groupId>
+			<artifactId>jeecg-p3-bizcore</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<type>jar</type>
+		</dependency>
+		
 		<!-- Jeecg-P3 核心包  -->
 		
+
 		<!-- 插件：DEMO  -->
 		<dependency>
 			<groupId>org.p3framework</groupId>
 			<artifactId>jeecg-p3-biz-demo</artifactId>
-			<version>1.0.1</version>
+			<version>1.0.2</version>
 			<type>jar</type>
 		</dependency>
 		<!-- 插件：微信企业号  -->
@@ -176,14 +184,12 @@
 			<artifactId>jeecg-p3-biz-qywx</artifactId>
 			<version>1.0.0</version>
 			<type>jar</type>
-			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.jeewx</groupId>
 			<artifactId>jeewx-qywx-api</artifactId>
 			<version>1.0-SNAPSHOT</version>
 			<type>jar</type>
-			<scope>compile</scope>
 		</dependency>
 		<!-- 插件：cms系统  -->
 		<dependency>
@@ -191,8 +197,6 @@
 			<artifactId>jeecg-p3-biz-cms</artifactId>
 			<version>1.0.0</version>
 			<type>jar</type>
-			<scope>compile</scope>
 		</dependency>
-		
 	</dependencies>
 </project>

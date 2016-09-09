@@ -20,8 +20,8 @@ import ${domainPackage}.${className}Entity;
 import ${servicePackage}.${className}Service;
 
  /**
- * 描述：</b>${className}Controller<br>${codeName}
- * @author ${author}
+ * 描述：${codeName}
+ * @author: ${author}
  * @since：${nowDate}
  * @version:1.0
  */

@@ -15,7 +15,9 @@
     </context:component-scan>
 	<aop:aspectj-autoproxy proxy-target-class="true" />
 
-
+	 <!-- ApplicationContext -->
+	<bean class="org.jeecgframework.p3.core.utils.common.ApplicationContextUtil"></bean>
+	
 	<import resource="classpath:config/spring-config-cache.xml" />
 	<import resource="classpath:config/spring-config-p3.xml" />
 	<import resource="classpath:config/spring-config-dao.xml" />
