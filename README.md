@@ -72,7 +72,31 @@ Jeecg-P3 微服务框架（插件开发与容器技术最佳实践）
 	1.工具类：jeecg-p3-web/src/main/java/util/P3CodeGenerateUtil.java
 	2.配置文件：jeecg-p3-web/src/main/resources/p3-cg-config.properties
 	
-
+	
+【标签用法】
+		标签：
+	[1].下拉字典标签
+		#selectDictTag("sex", "sex","")
+		第一个参数 :类型组编码
+		第二个参数 :id和name
+		第三个参数 :默认值 
+	[2].下拉表标签
+		#selectTableTag("auth_id","auth_name","jw_auth","","");
+		第1个参数 ：表字段（用于下拉选择value）
+		第2个参数 ：表字段（用于下拉文本显示）
+		第3个参数 ：表名
+		第4个参数 ：id和name（页面控件）
+		第5个参数 ：默认值
+		
+	[3].数据权限标签:页面元素权限控制
+		#AuthFilterTag()
+			  说明：无参数   ，在需要进行权限控制的页面最下面添加该标签（权限配置规则参考jeecg）
+			  
+	[4].数据权限标签:操作码权限控制
+		#AuthOperateTag("myCode")
+		//TODO 需要控制的页面代码
+		#end
+			说明：需要对上面的myCode操作码控制时,权限配置编码为 myCode
 	
 技术交流
 ==========
